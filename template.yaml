@@ -10,26 +10,14 @@ Globals:
   Function:
     Timeout: 3
 
-Metadata:
-  AWS::ServerlessRepo::Application:
-    Name: my-app
-    Description: hello world
-    Author: user1
-    SpdxLicenseId: Apache-2.0
-    LicenseUrl: LICENSE.txt
-    ReadmeUrl: README.md
-    Labels: ['tests']
-    HomePageUrl: https://github.com/blackpatton17/untitled
-    SemanticVersion: 0.0.1
-    SourceCodeUrl: https://github.com/blackpatton17/untitled
 
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: hello-world/
-      Handler: app.lambdaHandler
-      Runtime: nodejs10.x
+      CodeUri: hello_world/
+      Handler: app.lambda_handler
+      Runtime: python3.8
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
