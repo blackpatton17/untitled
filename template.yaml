@@ -10,17 +10,6 @@ Globals:
   Function:
     Timeout: 3
 
-Metadata:
-  AWS::ServerlessRepo::Application:
-    Name: test-app
-    Description: hello world
-    Author: user1
-    SpdxLicenseId: Apache-2.0
-    LicenseUrl: LICENSE.txt
-    ReadmeUrl: README.md
-    Labels: ['tests']
-    SourceCodeUrl: https://github.com/blackpatton17/untitled
-
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
